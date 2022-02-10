@@ -1,0 +1,152 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-Regular.woff);
+}
+
+.container {
+  max-width: var(--max-width-main);
+  margin: 0 auto;
+}
+
+/* MENU */
+
+.menu-wrapper {
+  flex: 1 1 20%;
+
+  max-width: var(--side-max-width);
+  min-width: var(--side-min-width);
+
+  /* DEBUG */
+  /*  */
+}
+
+.menu-body {
+  margin-top: 10px;
+  flex-grow: 1;
+
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-body span {
+  font-size: 20px;
+}
+
+.menu-element span {
+  margin-left: 1ch;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.menu-element {
+  cursor: pointer;
+
+  margin-bottom: 10px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-element:hover {
+  background-color: #f1f1f1;
+}
+
+.true {
+  display: block;
+}
+
+.false {
+  display: none;
+}
+
+.create {
+  cursor: pointer;
+
+  padding: 15px 20px 15px 20px;
+  border-radius: 30px;
+  flex-grow: 1;
+
+  align-items: center;
+
+  background-color: rgba(158, 180, 255, 0.6);
+}
+
+.create:hover {
+  background-color: rgba(158, 180, 255, 1);
+}
+
+.create img {
+  display: none;
+}
+
+@media only screen and (max-width: 964px) {
+  .header-logo {
+    justify-content: center;
+  }
+
+  .header-logo img {
+    position: static;
+    max-width: 90%;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-body {
+    align-items: flex-end;
+  }
+
+  .menu-body span {
+    display: none;
+  }
+
+  .menu-element,
+  .create {
+    padding: 10px 10px 10px 10px;
+    border-radius: 30px;
+  }
+
+  .create img {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menu-wrapper {
+    flex: 5 5 15.625%;
+  }
+
+  .menu-body {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-height: 380px) {
+  .menu-body {
+    margin-top: 0;
+  }
+
+  .menu-element,
+  .create {
+    margin-bottom: 2px;
+    padding: 3px 3px 3px 3px;
+  }
+
+  .menu-element img,
+  .create img,
+  .heart {
+    width: 10px;
+    height: 10px;
+  }
+}

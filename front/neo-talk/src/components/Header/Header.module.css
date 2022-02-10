@@ -1,0 +1,154 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-Regular.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfffc;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: var(--max-width-main);
+  margin: 0 auto;
+}
+
+.header .header-content {
+  background-color: #fdfffc;
+  z-index: 2;
+
+  display: flex;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  justify-content: center;
+
+  align-items: center;
+  height: 50px;
+}
+
+.header-section {
+  flex: 1 1 20%;
+
+  display: flex;
+  align-items: center;
+
+  height: 50px;
+}
+
+.header-logo {
+  cursor: pointer;
+
+  display: flex;
+  position: relative;
+  top: 0;
+  right: 0;
+
+  max-width: var(--side-max-width);
+  min-width: var(--side-min-width);
+}
+
+.header-logo img {
+  position: absolute;
+  left: 8%;
+  max-width: 80%;
+}
+
+.search-box {
+  position: relative;
+  flex: 3 3 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #e8ebf1;
+}
+
+.header-search-box-content {
+  position: absolute;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* TODO
+    border: 2px solid var(--color-primary);
+     */
+  width: 90%;
+  border-radius: 25px;
+  height: 28px;
+
+  background-color: #f1f1f1;
+}
+
+.search-image {
+  position: absolute;
+  left: 8px;
+}
+
+.delete-image {
+  visibility: hidden;
+  position: absolute;
+  right: 6px;
+}
+
+.search-txt {
+  min-width: 40px;
+  margin: 0 32px 0 32px;
+  flex-grow: 1;
+
+  font-size: 16px;
+  padding: 0 0 0 0;
+  border: 0;
+
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.header-TODO {
+  flex: 1 1 20%;
+}
+
+@media only screen and (max-width: 964px) {
+  .header-logo {
+    justify-content: center;
+  }
+
+  .header-logo img {
+    position: static;
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-logo {
+    flex: 5 5 15.625%;
+  }
+
+  .search-box {
+    flex: 22 22 68.75%;
+
+    min-width: 220px;
+  }
+
+  .header-TODO {
+    flex: 5 5 15.625%;
+  }
+}

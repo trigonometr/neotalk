@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-Regular.woff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fdfffc;
+}
+
+.signup-logo {
+  position: relative;
+  left: -2.2%;
+  top: 8.6%;
+  z-index: 2;
+}
+
+.signup-NeoTalk {
+  position: relative;
+  width: 70%;
+  height: 26%;
+}
+
+.signup-form {
+  position: relative;
+  top: 10vh;
+  left: 0;
+
+  margin: 0 auto;
+  height: 461px;
+  max-width: 380px;
+  min-width: 200px;
+}
+
+.signup-form-container {
+  position: relative;
+  margin: 0 auto;
+  height: 81%;
+  width: 100%;
+
+  display: block;
+  background-color: #f3f3f3;
+  border-radius: 30px;
+}
+
+.signup {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  padding: 15px 5px 15px 5px;
+
+  text-align: center;
+  background-color: #414361;
+  border-bottom: 2px solid #414361;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.signup h1 {
+  font-size: 30px;
+  color: #fdfffc;
+}
+
+.inner-signup-form-container {
+  position: absolute;
+  padding: 15px 20px 10px 20px;
+  top: 20%;
+  height: 80%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signup-form-group {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  border-radius: 25px;
+  background-color: #fdfffc;
+
+  text-align: center;
+  border: 2px solid rgba(169, 188, 255, 0.65);
+}
+
+.signup-form-group input {
+  padding: 0 0 0 0;
+  border: 0;
+
+  border: none;
+  background: none;
+  outline: none;
+  position: absolute;
+  top: 0px;
+  left: 14px;
+
+  margin-top: 12px;
+  width: 95%;
+}
+
+.signup-form-group label {
+  padding: 0 0;
+  position: absolute;
+  left: 14px;
+  top: 5px;
+
+  color: #a9a7ab;
+  pointer-events: none;
+}
+
+.birth-date-div {
+  position: relative;
+  top: 5px;
+  color: rgb(65, 67, 97);
+}
+
+.date {
+  text-align: center;
+  border: 2px solid rgba(169, 188, 255, 0.3);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  top: -5px;
+
+  border-radius: 25px;
+  background-color: #fdfffc;
+  transition: 0.25s;
+}
+
+.date:focus {
+  border: 2px solid rgba(169, 188, 255, 1);
+}
+
+.signup-line1 {
+  height: 36px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.continue-button {
+  position: relative;
+  width: 100%;
+  color: #fdfffc;
+  background-color: rgba(65, 67, 97, 0.9);
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+
+  border: 0;
+  padding: 5px 20px 5px 20px;
+}
+
+.continue-button:hover {
+  background-color: rgb(65, 67, 97);
+}
+
+.signup-line2 {
+  transform: translateY(-50%);
+}
+
+.signed-up {
+  font-size: 13px;
+  color: #388697;
+  text-decoration: none;
+}

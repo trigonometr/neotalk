@@ -1,0 +1,37 @@
+.logout-button {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-color: #e3170a;
+
+  border-radius: 50px;
+}
+
+.logout-button p {
+  font-size: 25px;
+  color: #fdfffc;
+}
+
+.login-button {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  background-color: #414361;
+
+  border-radius: 50px;
+}
+
+.login-button p {
+  font-size: 25px;
+  color: #fdfffc;
+}

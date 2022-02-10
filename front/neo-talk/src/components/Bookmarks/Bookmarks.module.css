@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../../fonts/Montserrat-Regular.woff);
+}
+
+.container {
+  max-width: var(--max-width-main);
+  margin: 0 auto;
+}
+
+.bookmarks-body {
+  position: relative;
+  flex: 1 3 60%;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  border: 1px solid #f1e8e8;
+  border-top: 0px solid #f1e8e8;
+}
+
+@media only screen and (max-width: 500px) {
+  .bookmarks-body {
+    flex: 22 22 68.75%;
+
+    min-width: 220px;
+  }
+}
