@@ -1,6 +1,6 @@
 from django.db.models import query
 from django.shortcuts import render
-from rest_framework import request, viewsets, mixins
+from rest_framework import request, viewsets, mixins, permissions
 from rest_framework.response import Response
 
 from .models import Post
@@ -34,6 +34,7 @@ class SearchPostViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
 
 class BookmarkedPostViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     serializer_class = PostSerializer
+    permission_classes = [permissions.AllowAny]
 
     def get_queryset(self):
 

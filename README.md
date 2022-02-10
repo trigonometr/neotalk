@@ -6,8 +6,14 @@ __Running locally__
 
 Programs needed: python, pip, npm
 
+At first run setup:
+```./setup.sh```
+
 To run service locally use run.sh script:
 ```./run.sh```
+
+To kill processes, which take required ports run free_ports script:
+```./free_ports.sh```
 
 __Global version__
 
