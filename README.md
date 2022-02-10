@@ -2,6 +2,10 @@
 
 Neotalk source files.
 
+__Global version__
+
+You can visit the site using the following link: http://51.250.24.17/home (to login you need to choose More -> Login button)
+
 __Running locally__
 
 Programs needed: python, pip, npm
@@ -14,10 +18,6 @@ To run service locally use run.sh script:
 
 To kill processes, which take required ports run free_ports script:
 ```./free_ports.sh```
-
-__Global version__
-
-You can visit the site using the following link: http://51.250.24.17/home (to login you need to choose More -> Login button)
 
 ## Main features of the service so far:
  - simple jwt authentication;
