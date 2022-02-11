@@ -9,7 +9,7 @@ Default user:
  __login__: simple_user
  __password__: hellodaddyhellomom
 
-You can visit the site using the following link: http://51.250.24.17/home (to login you need to choose More -> Login button)
+You can visit the site using the following link: http://84.201.142.45/home (to login you need to choose More -> Login button)
 
 __Running locally__
 
