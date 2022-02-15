@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:8000/';
+const baseURL = 'http://84.201.142.45/';
 
 export async function refreshRequest() {
   const refresh = window.localStorage.getItem('REFRESH_TOKEN');
@@ -12,9 +12,11 @@ export async function refreshRequest() {
       refresh,
     }),
   });
+  console.log('Refresh Response: ', refreshResponse);
 
   if (refreshResponse.ok) {
     const refreshData = await refreshResponse.json();
+    console.log('Refresh data: ', refreshData);
     window.localStorage.setItem('ACCESS_TOKEN', refreshData.access);
     return true;
   }
@@ -33,6 +35,7 @@ export async function apiRequest(url, options = {}) {
 
   if (response.status === 401) {
     const isRefreshed = await refreshRequest();
+    console.log('Api Request -> isRefreshed: ', isRefreshed);
 
     if (isRefreshed) {
       const newToken = window.localStorage.getItem('ACCESS_TOKEN');
@@ -157,6 +160,8 @@ export const isAuthorized = async () => {
       token: accessToken,
     }),
   });
+
+  console.log('Verify response: ', response);
 
   if (!response.ok) {
     const isRefreshed = await refreshRequest();

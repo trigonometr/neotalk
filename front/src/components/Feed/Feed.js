@@ -12,6 +12,7 @@ function Feed() {
 
   const requestFeed = async () => {
     const currentFeed = await getFeedPromise();
+    console.log(currentFeed);
     setFeed(currentFeed);
   };
 
